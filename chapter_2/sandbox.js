@@ -74,3 +74,13 @@ let b = 2;
 console.log(b==='2');  //using strict comparison
 console.log(b !=='2');  //using strict comparison
 console.log(b !== 2);   //using strict comparison
+//type conversion, using Number to convert string to number
+// let score = "200";
+// score = Number(score); //Number is use to convert string to number.
+// let Score = score + 2;
+// console.log(Score);
+// console.log(score + 2);
+// console.log(typeof(Score)); //to ascertain its data type
+//type conversion using String to convert number to string
+let score = String(20);
+console.log(typeof(score)); //to ascertain its data type
