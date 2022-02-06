@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Events</title>
+    <style>
+        form{
+            max-width: 200px;
+            margin: 40px auto;
+            background: white;
+            padding: 10px;
+        }
+        input{
+            display: block;
+            margin: 10px auto;
+            padding: 4px;
+        }
+        center{
+            color:blue;
+            font-style: italic;
+            font-weight: bolder;
+            font-family: sans-serif;
+        }
+        .success{
+            border: 4px solid green;
+            color: green;
+        }
+        .error{
+            border:4px solid crimson;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <center><span>&#128510;</span>Form and Form Events</center>
+    <form action="" class="signup-form">
+        <input type="text" id="usernames" name="usernames" placeholder="username">
+        <input type="submit" value="submit">
+        <div class="feedback"></div>
+    </form>
+    
+
+    <script src="sandbox.js"></script>
+</body>
+</html>

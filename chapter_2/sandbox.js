@@ -83,4 +83,4 @@ console.log(b !== 2);   //using strict comparison
 // console.log(typeof(Score)); //to ascertain its data type
 //type conversion using String to convert number to string
 let score = String(20);
-console.log(typeof(score)); //to ascertain its data type
+console.log( score, typeof(score)); //to ascertain its data type
