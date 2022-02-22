@@ -36,3 +36,5 @@ const tick = () =>{
     clock.innerHTML= html;
 };
 setInterval(tick, 1000);
+
+
