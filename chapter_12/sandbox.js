@@ -21,7 +21,7 @@
 // };
 
 // chaining promises
-// getTodos('todos/sixtus.json').then(data => {
+// getTodos('todos/sixties.json').then(data => {
 //     console.log('promise 1 resolved:', data);
 //     return getTodos('todos/max.json');
 // }).then(data =>{
@@ -61,12 +61,12 @@ getTodos()
     });
 
 
-// getTodos('todos/sixtus.json', (err, data) => {
-//     console.log(data);
-//     getTodos('todos/max.json', (err, data) => {
-//         console.log(data);
-//         getTodos('todos/terry.json', (err, data) => {
-//             console.log(data);
-//         });
-//     });
-// });
+getTodos('todos/sixtus.json', (err, data) => {
+    console.log(data);
+    getTodos('todos/max.json', (err, data) => {
+        console.log(data);
+        getTodos('todos/terry.json', (err, data) => {
+            console.log(data);
+        });
+    });
+});
