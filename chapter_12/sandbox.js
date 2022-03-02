@@ -44,19 +44,21 @@
 //     console.log('rejected:', err);
 // });
 
-// async & await
+// Throwing and catching Errors
 const getTodos = async () =>{
     const response = await fetch('todos/max.json');
+    
+    if(response.status !== 200){
+        throw new Error('can not fetch the data'); // throw new Error() is use to define our own error
+    }
     const data = await response.json();
     // console.log(data);
     return data;
 };
-console.log(1);
-console.log(2)
 getTodos()
-    .then(data => console.log('resolved:', data));
-console.log(3)
-console.log(4)
+    .then(data => console.log('resolved:', data)).catch((err)=>{
+        console.log('rejected', err.message)
+    });
 
 
 // getTodos('todos/sixtus.json', (err, data) => {
